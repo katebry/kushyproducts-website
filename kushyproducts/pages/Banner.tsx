@@ -3,8 +3,9 @@ import styled from "styled-components";
 const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  grid-area: 2 / 3 / 4 / 7;
+  grid-area: 2 / 3 / 3 / 7;
   max-height: 300px;
+  padding-bottom: 30px;
 `;
 
 const Image = styled.img`
