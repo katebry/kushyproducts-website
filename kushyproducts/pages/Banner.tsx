@@ -8,7 +8,12 @@ const ImageContainer = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100px;
+  @media only screen and (max-width: 426px) {
+    width: 195px;
+  }
+  @media only screen and (min-width: 427px) {
+    width: 300px;
+  }
 `;
 
 export default function Banner() {
