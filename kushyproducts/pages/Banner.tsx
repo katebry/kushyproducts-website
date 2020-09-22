@@ -3,19 +3,19 @@ import styled from "styled-components";
 const ImageContainer = styled.div`
   display: flex;
   justify-content: center;
-  align-content: center;
+  grid-area: 2 / 3 / 4 / 7;
+  max-height: 300px;
 `;
 
 const Image = styled.img`
-  height: 300px;
-  width: 35%;
+  width: 100px;
 `;
 
 export default function Banner() {
   return (
     <>
       <ImageContainer>
-        <Image src="/logo.jpeg" />
+        <Image src="/logo.png" alt="kushy products logo" />
       </ImageContainer>
     </>
   );
