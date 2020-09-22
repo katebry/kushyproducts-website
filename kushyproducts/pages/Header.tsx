@@ -5,6 +5,10 @@ const ContactUsWrapper = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #e9757a;
 `;
 
 const AboutUsWrapper = styled.div`
@@ -12,6 +16,10 @@ const AboutUsWrapper = styled.div`
   grid-area: 1 / 4 / 2 / 6;
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #e9757a;
 `;
 
 const EventsWrapper = styled.div`
@@ -19,6 +27,10 @@ const EventsWrapper = styled.div`
   grid-area: 1 / 6 / 2 / 8;
   display: flex;
   justify-content: center;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 22px;
+  color: #e9757a;
 `;
 
 export default function Header() {
