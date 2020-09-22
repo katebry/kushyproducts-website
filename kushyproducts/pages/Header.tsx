@@ -9,6 +9,9 @@ const ContactUsWrapper = styled.div`
   letter-spacing: 2px;
   font-size: 22px;
   color: #e9757a;
+  @media only screen and (max-width: 426px) {
+    font-size: 14px;
+  }
 `;
 
 const AboutUsWrapper = styled.div`
@@ -20,6 +23,9 @@ const AboutUsWrapper = styled.div`
   letter-spacing: 2px;
   font-size: 22px;
   color: #e9757a;
+  @media only screen and (max-width: 426px) {
+    font-size: 14px;
+  }
 `;
 
 const EventsWrapper = styled.div`
@@ -31,6 +37,9 @@ const EventsWrapper = styled.div`
   letter-spacing: 2px;
   font-size: 22px;
   color: #e9757a;
+  @media only screen and (max-width: 426px) {
+    font-size: 14px;
+  }
 `;
 
 export default function Header() {
