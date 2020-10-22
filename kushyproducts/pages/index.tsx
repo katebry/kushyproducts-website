@@ -19,9 +19,10 @@ export default function Home() {
         }
       /> */}
       <MainContent
-        content={
-          "If you have any questions for us, about us or our products please don’t hesitate to get in touch with us. You can currently order our products through our Instagram page. Here is where you can reach us:"
+        content1={
+          "If you have any questions about us or our products please don’t hesitate to get in touch."
         }
+        content2={"You can currently order our products through our Instagram page."}
         email={"kushyproductsteam@gmail.com"}
         socials={"@Kushy_Products"}
       />

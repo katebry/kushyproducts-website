@@ -8,23 +8,42 @@ const ContactWrapper = styled.div`
   grid-area: 4 / 2 / 5 / 8;
 `;
 
+const TextBox = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: center;
+`;
+
 interface MainContentProps {
-  content: string;
+  content1: string;
+  content2: string;
   email?: string;
   socials?: string;
 }
 
 export default function MainContent({
-  content,
+  content1,
+  content2,
   email,
   socials,
 }: MainContentProps) {
   return (
     <>
-      <ContentWrapper>{content}</ContentWrapper>
+      <ContentWrapper>
+        <TextBox>
+        {content1}
+        </TextBox>
+        <TextBox>
+          {content2}
+        </TextBox>
+        </ContentWrapper>
       <ContactWrapper>
+      <TextBox>
         {email ? <div>{email}</div> : null}
+      </TextBox>
+      <TextBox>
         {socials ? <div>{socials}</div> : null}
+      </TextBox>
       </ContactWrapper>
     </>
   );
