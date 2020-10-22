@@ -1,5 +1,9 @@
 import styled from 'styled-components'
 
+interface HeaderProps {
+    handleClick: (id: number) => void
+}
+
 const ContactUsWrapper = styled.button`
     border: 0;
     background-color: white;
@@ -66,14 +70,12 @@ const EventsWrapper = styled.button`
     }
 `
 
-// need to set on click in here, pass it up to parent
-
-export default function Header() {
+export default function Header({ handleClick }: HeaderProps) {
     return (
         <>
-            <AboutUsWrapper>About Us</AboutUsWrapper>
-            <ContactUsWrapper>Contact Us</ContactUsWrapper>
-            <EventsWrapper>Events</EventsWrapper>
+            <AboutUsWrapper onClick={() => handleClick(1)} >About Us</AboutUsWrapper>
+            <ContactUsWrapper onClick={() => handleClick(2)}>Contact Us</ContactUsWrapper>
+            <EventsWrapper onClick={() => handleClick(3)}>Events</EventsWrapper>
         </>
     )
 }

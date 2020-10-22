@@ -3,31 +3,8 @@ import styled from 'styled-components'
 import Header from './Header'
 import Banner from './Banner'
 
-const ContentWrapper = styled.div`
-    grid-area: 3 / 2 / 4 / 8;
-`
-
-const ContactWrapper = styled.div`
-    grid-area: 4 / 2 / 5 / 8;
-`
-
-const TextBox = styled.div`
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 15px;
-`
-
-const AboutTextBox = styled.div`
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    padding-top: 5px;
-`
-
 interface MainContentProps {
     content: TextContent
-    id: number
 }
 
 interface TextContent {
@@ -51,8 +28,31 @@ interface TextContent {
     }
 }
 
-export default function MainContent({ content, id }: MainContentProps) {
+const ContentWrapper = styled.div`
+    grid-area: 3 / 2 / 4 / 8;
+`
+
+const ContactWrapper = styled.div`
+    grid-area: 4 / 2 / 5 / 8;
+`
+
+const TextBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15px;
+`
+
+const AboutTextBox = styled.div`
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 5px;
+`
+
+export default function MainContent({ content }: MainContentProps) {
     const [text, setText] = useState<any>({})
+    const [id, setId] = useState(1)
     const [loading, setLoading] = useState(true)
 
     const about = content[1]
@@ -76,6 +76,27 @@ export default function MainContent({ content, id }: MainContentProps) {
         setLoading(false)
     }, [])
 
+    useEffect(() => {
+        contentSetter()
+    }, [id])
+
+    const handleClick = (buttonId) => {
+        setId(buttonId)
+    }
+
+    const contentSetter = () => {
+        if (id === 1) {
+            setText(about)
+        }
+        if (id === 2) {
+            setText(contact)
+        }
+        if (id === 3) {
+            setText(events)
+        }
+        return
+    }
+
     return (
         <>
             {loading ? (
@@ -85,7 +106,7 @@ export default function MainContent({ content, id }: MainContentProps) {
                 </>
             ) : (
                 <>
-                    <Header />
+                    <Header handleClick={handleClick} />
                     <Banner />
                     {text.key === 'about' ? (
                         <ContentWrapper>
@@ -94,7 +115,7 @@ export default function MainContent({ content, id }: MainContentProps) {
                             <TextBox>{text.line3}</TextBox>
                         </ContentWrapper>
                     ) : null}
-                     {text.key === 'contact' ? (
+                    {text.key === 'contact' ? (
                         <ContentWrapper>
                             <AboutTextBox>{text.line1}</AboutTextBox>
                             <AboutTextBox>{text.line2}</AboutTextBox>

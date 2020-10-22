@@ -11,7 +11,7 @@ export default function Home() {
                 <title>Kushy Products</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <MainContent content={content} id={2}/>
+            <MainContent content={content} />
         </div>
     )
 }
