@@ -14,9 +14,9 @@ export default function Home() {
       <Header />
       <Banner />
       {/* <MainContent
-        content={
-          "All things Kushy – from bath bombs, body scrubs, lip scrubs, lip balm and essential oil sprays. All our products are vegan and tested on humans."
-        }
+        content1={
+          "All things Kushy – from bath bombs, body scrubs, lip scrubs, lip balm and essential oil sprays."} 
+          content2={"All our products are vegan and tested on humans."}
       /> */}
       <MainContent
         content1={
