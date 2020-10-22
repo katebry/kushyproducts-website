@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react'
 import styled from 'styled-components'
 import Header from './Header'
 import Banner from './Banner'
+import { GrInstagram } from 'react-icons/gr'
+import { SiGmail } from 'react-icons/si'
 
 interface MainContentProps {
     content: TextContent
@@ -48,6 +50,10 @@ const AboutTextBox = styled.div`
     justify-content: center;
     align-content: center;
     padding-top: 5px;
+`
+
+const SocialWrapper = styled.div`
+    font-size: 20px;
 `
 
 export default function MainContent({ content }: MainContentProps) {
@@ -128,10 +134,20 @@ export default function MainContent({ content }: MainContentProps) {
                     ) : null}
                     <ContactWrapper>
                         <TextBox>
-                            {text.email ? <div>{text.email}</div> : null}
+                            {text.email ? (
+                                <SocialWrapper>
+                                    <SiGmail />
+                                    {text.email}
+                                </SocialWrapper>
+                            ) : null}
                         </TextBox>
                         <TextBox>
-                            {text.socials ? <div>{text.socials}</div> : null}
+                            {text.socials ? (
+                                <SocialWrapper>
+                                    <GrInstagram />
+                                    {text.socials}
+                                </SocialWrapper>
+                            ) : null}
                         </TextBox>
                     </ContactWrapper>
                 </>
