@@ -11,3 +11,9 @@
 .mainContent {
   grid-area: 3 / 3 / 4 / 4;
 }
+
+.infoBar {
+  grid-area: 5 / 1 / 6 / 6;
+  background-color: #e8461c;
+  width: 100vw;
+}
