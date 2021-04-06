@@ -9,7 +9,7 @@ export default function Home() {
                 <MainContent />
             </div>
             <div className={styles.infoBar}>
-                <InfoBar />
+                <InfoBar text="Kushy is the new kid on the block."/>
             </div>
         </div>
     )
