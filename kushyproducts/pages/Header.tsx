@@ -8,7 +8,7 @@ const ContactUsWrapper = styled.button`
     border: 0;
     background-color: white;
     padding-top: 25px;
-    grid-area: 1 / 2 / 2 / 4;
+    grid-area: 1 / 4 / 2 / 6;
     display: flex;
     justify-content: center;
     font-weight: 700;
@@ -30,7 +30,7 @@ const AboutUsWrapper = styled.button`
     border: 0;
     background-color: white;
     padding-top: 25px;
-    grid-area: 1 / 4 / 2 / 6;
+    grid-area: 1 / 2 / 2 / 4;
     display: flex;
     justify-content: center;
     font-weight: 700;
