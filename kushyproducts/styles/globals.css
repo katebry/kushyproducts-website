@@ -7,8 +7,15 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
+
+@font-face {
+  font-family: "Blockers Stamp";
+  src: url("/fonts/Blockers-Stamp.otf");
+}
+
 body {
-  font-family: -apple-system, Roboto, Helvetica Neue, sans-serif;
+  font-family: -apple-system, "Blockers Stamp", Roboto, Helvetica Neue,
+    sans-serif;
   margin: 0;
 }
 
