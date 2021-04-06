@@ -7,7 +7,7 @@ interface MainContentProps {
 export default function MainContent(props: MainContentProps) {
     return (
         <>
-            <Image src="/Logo.png" alt="me" layout='fill' />
+            <Image src="/Logo.png" alt="me" layout='fill' objectFit="contain"/>
         </>
     )
 }
