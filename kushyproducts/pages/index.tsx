@@ -24,7 +24,7 @@ export default function Home() {
       </div>
       <div className={styles.contactContainer}>
         <div className={styles.aboutText}>
-          <AboutText text="We make glorious bath bombs, soaps and more so you can relax, unwind and soak up some all natural botanical bliss!" />
+          <AboutText />
         </div>
       </div>
     </>

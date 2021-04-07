@@ -40,4 +40,6 @@
 
 .aboutText {
   grid-area: 2 / 3 / 4 / 6;
+  text-align: center;
+  margin-top: 3px;
 }
