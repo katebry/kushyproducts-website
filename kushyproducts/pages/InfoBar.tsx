@@ -8,9 +8,9 @@ const TextWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  height: 100%;
   color: white;
-  font-size: 42px;
+  font-size: 5vw;
 `;
 
 export default function InfoBar({ text }: InfoBarProps) {
