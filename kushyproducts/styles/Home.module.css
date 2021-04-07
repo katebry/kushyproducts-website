@@ -6,6 +6,15 @@
   grid-template-rows: repeat(2, 1fr) 5fr repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  padding-right: 20px;
+}
+
+.home {
+  grid-area: 1 / 4 / 2 / 5;
+}
+
+.contact {
+  grid-area: 1 / 5 / 2 / 6;
 }
 
 .mainContent {

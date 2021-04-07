@@ -1,10 +1,18 @@
 import styles from '../styles/Home.module.css'
+import HomeButton from './HomeButton'
+import ContactButton from './ContactButton'
 import MainContent from './MainContent'
 import InfoBar from './InfoBar'
 
 export default function Home() {
     return (
         <div className={styles.container}>
+            <div className={styles.home}>
+                <HomeButton />
+            </div>
+            <div className={styles.contact}>
+                <ContactButton />
+            </div>
             <div className={styles.mainContent}>
                 <MainContent />
             </div>
