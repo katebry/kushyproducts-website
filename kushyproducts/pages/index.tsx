@@ -4,6 +4,7 @@ import ContactButton from "./ContactButton";
 import MainContent from "./MainContent";
 import InfoBar from "./InfoBar";
 import AboutText from "./AboutText";
+import SoapImage from "./SoapImage";
 
 export default function Home() {
   return (
@@ -25,6 +26,9 @@ export default function Home() {
       <div className={styles.contactContainer}>
         <div className={styles.aboutText}>
           <AboutText />
+        </div>
+        <div className={styles.soapImage}>
+          <SoapImage />
         </div>
       </div>
     </>
