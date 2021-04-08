@@ -5,6 +5,7 @@ import MainContent from "./MainContent";
 import InfoBar from "./InfoBar";
 import AboutText from "./AboutText";
 import SoapImage from "./SoapImage";
+import Form from "./Form"
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
         </div>
         <div className={styles.soapImage}>
           <SoapImage />
+        </div>
+        <div className={styles.form}>
+            <Form />
         </div>
       </div>
     </>
