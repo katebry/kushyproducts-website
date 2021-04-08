@@ -29,7 +29,7 @@
 }
 
 .contactContainer {
-  height: 150vh;
+  height: 130vh;
   width: 100vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr) 2fr repeat(2, 3fr) 2fr repeat(2, 1fr);
