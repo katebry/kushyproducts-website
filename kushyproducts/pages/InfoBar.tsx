@@ -4,10 +4,13 @@ interface InfoBarProps {
   text: string;
 }
 
-const TextWrapper = styled.div`
+const TextContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const TextWrapper = styled.div`
   height: 100%;
   color: white;
   font-size: 5vw;
@@ -15,8 +18,8 @@ const TextWrapper = styled.div`
 
 export default function InfoBar({ text }: InfoBarProps) {
   return (
-    <>
+    <TextContainer>
       <TextWrapper>{text.toUpperCase()}</TextWrapper>
-    </>
+    </TextContainer>
   );
 }
