@@ -5,15 +5,16 @@ interface InfoBarProps {
 }
 
 const TextContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 10px;
 `;
 
 const TextWrapper = styled.div`
-  height: 100%;
+  display: flex;
   color: white;
   font-size: 5vw;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 `;
 
 export default function InfoBar({ text }: InfoBarProps) {
