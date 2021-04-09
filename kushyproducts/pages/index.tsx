@@ -5,16 +5,14 @@ import MainContent from "./MainContent";
 import InfoBar from "./InfoBar";
 import AboutText from "./AboutText";
 import SoapImage from "./SoapImage";
-import Form from "./Form"
+import Form from "./Form";
 
 export default function Home() {
   return (
     <>
       <div className={styles.container}>
-        <div className={styles.home}>
+        <div className={styles.buttons}>
           <HomeButton />
-        </div>
-        <div className={styles.contact}>
           <ContactButton />
         </div>
         <div className={styles.mainContent}>
@@ -32,7 +30,7 @@ export default function Home() {
           <SoapImage />
         </div>
         <div className={styles.form}>
-            <Form />
+          <Form />
         </div>
       </div>
     </>
