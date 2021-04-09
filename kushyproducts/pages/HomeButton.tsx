@@ -19,7 +19,7 @@ const InstagramButton = styled(Button)`
 export default function HomeButton() {
   return (
     <>
-      <InstagramButton href='https://www.instagram.com/kushy_products/'>
+      <InstagramButton target="_blank" href='https://www.instagram.com/kushy_products/'>
         <SiInstagram />
       </InstagramButton>
       <Button href="#home">Home</Button>
