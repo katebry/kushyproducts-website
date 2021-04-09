@@ -8,12 +8,13 @@ const Button = styled.a`
   color: white;
   font-size: 4vw;
   margin-right: 3vw;
+  cursor: pointer;
 `;
 
 export default function HomeButton() {
   return (
     <>
-      <Button>Home</Button>
+      <Button href="#home">Home</Button>
     </>
   );
 }

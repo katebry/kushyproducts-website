@@ -36,7 +36,7 @@ const Input = styled.input`
 
 export default function Form() {
   return (
-    <FormContainer>
+    <FormContainer id="contact">
       <Title>GET IN TOUCH</Title>
       <FormGrid>
         <Input />
