@@ -5,6 +5,7 @@ const Button = styled.a`
   color: white;
   font-size: 4vw;
   cursor: pointer;
+  padding-top: 2px;
 `;
 
 export default function ContactButton() {
