@@ -15,11 +15,22 @@ const Title = styled.div`
   font-size: 10vh;
 `;
 
+const Input = styled.input`
+  background-color: white;
+  border: none;
+  border-radius: 0px;
+  color: black;
+
+  &:focus {
+    outline: none;
+  }
+`;
+
 export default function Form() {
   return (
     <FormContainer>
       <Title>GET IN TOUCH</Title>
-      <p>hello</p>
+      <Input />
     </FormContainer>
   );
 }
