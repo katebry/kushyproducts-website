@@ -11,8 +11,8 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 80%;
+  max-height: 80%;
 `;
 
 export default function MainContent(props: MainContentProps) {
