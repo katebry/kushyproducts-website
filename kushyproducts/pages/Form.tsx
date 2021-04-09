@@ -15,6 +15,14 @@ const Title = styled.div`
   font-size: 10vh;
 `;
 
+const FormGrid = styled.div`
+  display: grid;
+  grid-template-columns: 1fr repeat(2, 3fr) 1fr;
+  grid-template-rows: 4fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+`;
+
 const Input = styled.input`
   background-color: white;
   border: none;
@@ -30,7 +38,9 @@ export default function Form() {
   return (
     <FormContainer>
       <Title>GET IN TOUCH</Title>
-      <Input />
+      <FormGrid>
+        <Input />
+      </FormGrid>
     </FormContainer>
   );
 }
