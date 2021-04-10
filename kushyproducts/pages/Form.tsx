@@ -30,6 +30,8 @@ const Input = styled.input`
   border-radius: 0px;
   color: black;
   min-height: 8vh;
+  font-size: 4vh;
+  padding: 5px;
 
   &:focus {
     outline: none;

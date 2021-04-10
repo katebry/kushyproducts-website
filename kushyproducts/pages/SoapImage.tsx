@@ -12,8 +12,7 @@ const ImageContainer = styled.div`
 `;
 
 const StyledImage = styled.img`
-  max-width: 100%;
-  max-height: 100%;
+  max-height: 45vh;
 `;
 
 export default function SoapImage(props: SoapImageProps) {
