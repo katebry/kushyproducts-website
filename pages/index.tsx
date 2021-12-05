@@ -1,4 +1,3 @@
-import styles from "../styles/Home.module.css";
 import HeaderButtons from "./HeaderButtons";
 import MainContent from "./MainContent";
 import InfoBar from "./InfoBar";
@@ -6,14 +5,14 @@ import InfoBar from "./InfoBar";
 export default function Home() {
   return (
     <div>
-      <div className={styles.container}>
-        <div className={styles.buttons}>
+      <div className="container">
+        <div className="buttons">
           <HeaderButtons />
         </div>
-        <div className={styles.mainContent}>
+        <div className="mainContent">
           <MainContent />
         </div>
-        <div className={styles.infoBar}>
+        <div className="infoBar">
           <InfoBar />
         </div>
       </div>
