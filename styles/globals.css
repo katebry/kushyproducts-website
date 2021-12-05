@@ -7,15 +7,13 @@ html {
   scroll-behavior: smooth;
 }
 
-/* @font-face {
+@font-face {
   font-family: "Blockers Stamp";
   src: url("../public/fonts/Blockers-Stamp.otf");
-
-  font-family: "Blockers Stamp", Roboto
-} */
+}
 
 body {
-  font-family: -apple-system, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Helvetica Neue,
+  font-family: -apple-system, "Blockers Stamp", Roboto, Helvetica Neue,
     sans-serif;
   margin: 0;
 }
