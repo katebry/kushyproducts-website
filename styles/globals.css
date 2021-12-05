@@ -9,7 +9,7 @@ html {
 
 @font-face {
   font-family: "Blockers Stamp";
-  src: url("./font/Blockers-Stamp.otf")
+  src: url("../public/Blockers-Stamp.otf");
 }
 
 body {
