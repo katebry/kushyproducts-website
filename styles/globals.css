@@ -1,10 +1,11 @@
 html {
-  background: url("../public/BackgroundMain.png") repeat center center fixed;
+  /* background: url("../public/BackgroundMain.png") repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 @font-face {
