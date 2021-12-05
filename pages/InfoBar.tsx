@@ -13,7 +13,7 @@ const TextWrapper = styled.div`
 export default function InfoBar({ text }: InfoBarProps) {
   return (
     <>
-      <TextWrapper>FIND US AT BIRKENHEAD MARKET</TextWrapper>
+      <TextWrapper>Find us at Birkenhead Market</TextWrapper>
     </>
   );
 }

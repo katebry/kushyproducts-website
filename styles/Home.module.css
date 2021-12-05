@@ -1,11 +1,3 @@
-.background {
-  background: url("../public/BackgroundMain.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
 .container {
   height: 100vh;
   width: 100vw;
