@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+html {
+  background: url(../assets//BackgroundMain.png) repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Blockers Stamp";
+  src: url("/fonts/Blockers-Stamp.otf");
+}
+
+body {
+  font-family: -apple-system, "Blockers Stamp", Roboto, Helvetica Neue,
+    sans-serif;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* brand colours
+#E8461C
+#E58E08
+#EC9C95
+#E4CEAE
+#FBDBC9 */
