@@ -13,8 +13,7 @@ const TextWrapper = styled.div`
 export default function InfoBar({ text }: InfoBarProps) {
   return (
     <>
-    {console.log(text)}
-      <TextWrapper>{text.toUpperCase()}</TextWrapper>
+      <TextWrapper>FIND US AT BIRKENHEAD MARKET</TextWrapper>
     </>
   );
 }

@@ -14,7 +14,7 @@ export default function Home() {
           <MainContent />
         </div>
         <div className={styles.infoBar}>
-          <InfoBar text="Find us at Birkenhead Market"/>
+          <InfoBar />
         </div>
       </div>
     </>
