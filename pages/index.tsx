@@ -5,7 +5,7 @@ import InfoBar from "./InfoBar";
 
 export default function Home() {
   return (
-    <div className={styles.background}>
+    <div>
       <div className={styles.container}>
         <div className={styles.buttons}>
           <HeaderButtons />
