@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 interface InfoBarProps {
-  text: string;
+  text?: string;
 }
 
 const TextWrapper = styled.div`
@@ -13,6 +13,7 @@ const TextWrapper = styled.div`
 export default function InfoBar({ text }: InfoBarProps) {
   return (
     <>
+    {console.log(text)}
       <TextWrapper>{text.toUpperCase()}</TextWrapper>
     </>
   );
