@@ -6,6 +6,12 @@ import Image from 'next/image'
 export default function Home() {
   return (
     <div>
+           <link
+            rel="preload"
+            href="/fonts/Blockers-Stamp.otf"
+            as="font"
+            crossOrigin=""
+          />
       <div className="container">
       <Image
         alt="Psychadelic colours"
