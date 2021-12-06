@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 interface MainContentProps {
   children?: React.ReactNode;
 }
@@ -5,7 +7,12 @@ interface MainContentProps {
 export default function MainContent(props: MainContentProps) {
   return (
     <div className="imageContainer">
-      <img className="styledImage" src="/Logo.png" alt="kushy products logo" />
+      <Image
+        layout="fill"
+        quality={100}
+        alt="kushy products logo"
+        src="/Logo.png"
+      />
     </div>
   );
 }
