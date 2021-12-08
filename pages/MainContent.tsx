@@ -9,7 +9,7 @@ export default function MainContent(props: MainContentProps) {
     <div className="imageContainer">
       <Image
         layout="fill"
-        quality={100}
+        objectFit="contain"
         alt="kushy products logo"
         src="/Logo.png"
       />
